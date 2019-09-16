@@ -24,7 +24,7 @@ creates `./dist` prod build folder.
 Publishs to npm. (have to login if needed using `npm login`)
 
 ### Github actions for CI/CD
-create `.yml` for github actions in `.github/workflows` and paset the code
+create `.yml` file for github actions in `.github/workflows` and paste the code
 
 ```
 name: Node CI
