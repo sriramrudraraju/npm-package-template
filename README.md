@@ -4,7 +4,7 @@ Template for creating npm modules.
 
 ## Using the template
 
-### clone or click `use template` feature
+### clone or click `use this template` feature
 
 ### Package.json
  Tweak necessary values in package.json
