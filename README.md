@@ -60,4 +60,3 @@ jobs:
 ## TODO
 
 * Unit Testing
-* Git Actions
