@@ -6,8 +6,7 @@
     "type": "git",
     "url": "git+https://github.com/sriramrudraraju/npm-package-template.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "sriram Rudraraju",
   "bugs": {
     "url": "https://github.com/sriramrudraraju/npm-package-template/issues"
   },
