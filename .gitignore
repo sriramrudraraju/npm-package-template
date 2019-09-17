@@ -17,5 +17,5 @@ node_modules/
 # dotenv environment variables file
 .env
 
-# others
+# unit test ccoverage
 coverage/

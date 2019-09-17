@@ -21,11 +21,13 @@ src/
 # environment variables
 .env
 
-# others
+# unit tests coverage
 coverage/
+
+# others
 .npmignore
 package-lock.json
-tsconfig.json
 yarn.lock
 jest.config.json
+tsconfig.json
 setupTests.ts
