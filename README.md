@@ -43,6 +43,8 @@ jobs:
     - uses: actions/checkout@v1
     - name: install dependencies
       run: npm install
+    - name: unit tests
+      run: npm run test
     - name: production build
       run: npm run build
     - name: npm publish
