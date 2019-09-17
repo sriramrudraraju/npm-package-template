@@ -22,7 +22,10 @@ src/
 .env
 
 # others
+coverage/
 .npmignore
 package-lock.json
 tsconfig.json
 yarn.lock
+jest.config.json
+setupTests.ts
