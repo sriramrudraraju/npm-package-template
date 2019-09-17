@@ -58,7 +58,3 @@ jobs:
  * Above code was simple CI/CD for pushing to npm when some code is pushed to master branch
  * ${{ secrets.NPM_AUTH_TOKEN }} was set using [github secrets](https://help.github.com/en/articles/virtual-environments-for-github-actions#creating-and-using-secrets-encrypted-variables)
  * NPM_AUTH_TOKEN is obtained from [npm](https://docs.npmjs.com/creating-and-viewing-authentication-tokens)
-
-## TODO
-
-* Unit Testing
