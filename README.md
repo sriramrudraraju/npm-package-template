@@ -1,6 +1,6 @@
 # NPM Package Template
 
-Template for creating npm modules.
+Template for creating npm modules. Inccluding react components
 
 [Example](https://github.com/sriramrudraraju/sriram-npm-package-2) using this template.
 
@@ -19,6 +19,12 @@ Installs dependencies.
 
 ### `npm run build`
 creates `./dist` prod build folder.
+
+### `npm run test`
+runs unit test cases using [jest](https://jestjs.io/en/) (and [enzyme](https://airbnb.io/enzyme/) for react components)
+
+### `npm run coverage`
+gives unit tests coverage report.
 
 ### `npm publish` 
 Publishs to npm. (have to login if needed using `npm login`)
