@@ -7,15 +7,13 @@ Template for creating npm modules. Inccluding react components
 ## Using the template
 
 ### clone or click `use this template` feature
-
-### Package.json
- Tweak necessary values in package.json
+* Tweak necessary values in package.json
 
 ### `npm install`
 Installs dependencies.
 
-### Testing in local
-`npm link` for local testing. More [info](https://docs.npmjs.com/cli/link)
+### `npm link` 
+ For local testing. More [info](https://docs.npmjs.com/cli/link)
 
 ### `npm run build`
 creates `./dist` prod build folder.
@@ -64,3 +62,6 @@ jobs:
  * Above code was simple CI/CD for pushing to npm when some code is pushed to master branch
  * ${{ secrets.NPM_AUTH_TOKEN }} was set using [github secrets](https://help.github.com/en/articles/virtual-environments-for-github-actions#creating-and-using-secrets-encrypted-variables)
  * NPM_AUTH_TOKEN is obtained from [npm](https://docs.npmjs.com/creating-and-viewing-authentication-tokens)
+ 
+ ### Storybook Integration
+ * code example with integrated [storybook](https://storybook.js.org/) is on `story-book` branch
