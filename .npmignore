@@ -29,7 +29,11 @@ scripts/
 
 # others
 .npmignore
+
 package-lock.json
 yarn.lock
+
 jest.config.json
 tsconfig.json
+
+npm/
