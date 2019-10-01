@@ -24,10 +24,12 @@ src/
 # unit tests coverage
 coverage/
 
+# scripts
+scripts/
+
 # others
 .npmignore
 package-lock.json
 yarn.lock
 jest.config.json
 tsconfig.json
-setupTests.ts
