@@ -1,8 +1,8 @@
 # NPM Package Template
 
-Template for creating npm modules. Inccluding react components
+Template for creating npm modules. Including react components.
 
-[Example](https://github.com/sriramrudraraju/sriram-npm-package-2) using this template.
+[Example](https://github.com/sriramrudraraju/sriram-npm-package-example) using this template.
 
 ## Using the template
 
@@ -12,26 +12,26 @@ Template for creating npm modules. Inccluding react components
 ### `npm install`
 Installs dependencies.
 
-### `npm link` 
- For local testing. More [info](https://docs.npmjs.com/cli/link)
-
-### `npm run build`
-creates `./dist` prod build folder.
-
 ### `npm run test`
 runs unit test cases using [jest](https://jestjs.io/en/) (and [enzyme](https://airbnb.io/enzyme/) for react components)
 
 ### `npm run coverage`
 gives unit tests coverage report.
 
+### `npm run build`
+creates `./dist` prod build folder.
+
+### `npm link` 
+ For local testing. More [info](https://docs.npmjs.com/cli/link)
+
 ### `npm publish` 
-Publishs to npm. (have to login if needed using `npm login`)
+Publishes to npm. (have to login if needed using `npm login`)
 
 ### Github actions for CI/CD
 create `.yml` file for github actions in `.github/workflows` and paste the code
 
 ```
-name: Node CI
+name: Publishing to npm
 
 on:
   push:
@@ -45,18 +45,18 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: install dependencies
+    - name: installing dependencies
       run: npm install
-    - name: unit tests
+    - name: running unit tests
       run: npm run test
-    - name: production build
+    - name: generating production build
       run: npm run build
-    - name: npm publish
-      run: |
-        npm config set //registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN
-        npm publish
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '10.x'
+        registry-url: 'https://registry.npmjs.org'
+    - run: npm publish
       env:
-        CI: true
         NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
  ```
  * Above code was simple CI/CD for pushing to npm when some code is pushed to master branch
