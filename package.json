@@ -1,6 +1,6 @@
 {
   "name": "npm-package-template",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "template for creating npm modules",
   "repository": {
     "type": "git",
@@ -11,10 +11,10 @@
     "url": "https://github.com/sriramrudraraju/npm-package-template/issues"
   },
   "homepage": "https://github.com/sriramrudraraju/npm-package-template#readme",
-  "main": "dist/index.js",
+  "main": "dist/main.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "./node_modules/.bin/tsc",
+    "build": "webpack --config scripts/webpack/config.production.ts && ./node_modules/.bin/tsc",
     "test": "jest",
     "coverage": "jest --coverage"
   },
@@ -23,15 +23,27 @@
     "react-dom": "^16.9.0"
   },
   "devDependencies": {
+    "@types/copy-webpack-plugin": "^5.0.0",
     "@types/enzyme": "^3.10.3",
     "@types/enzyme-adapter-react-16": "^1.0.5",
     "@types/jest": "^24.0.18",
+    "@types/node": "^12.7.8",
     "@types/react": "^16.9.2",
     "@types/react-dom": "^16.9.0",
+    "@types/webpack": "^4.39.2",
+    "awesome-typescript-loader": "^5.2.1",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.0.4",
+    "css-loader": "^3.2.0",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
     "jest": "^24.9.0",
+    "jest-transform-css": "^2.0.0",
+    "style-loader": "^1.0.0",
     "ts-jest": "^24.1.0",
-    "typescript": "^3.6.3"
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.3",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9"
   }
 }
