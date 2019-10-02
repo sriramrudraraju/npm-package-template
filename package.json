@@ -14,7 +14,7 @@
   "main": "dist/main.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "webpack --config scripts/webpack/config.production.ts && ./node_modules/.bin/tsc",
+    "build": "webpack --config scripts/webpack/config.production.ts && tsc",
     "test": "jest",
     "coverage": "jest --coverage"
   },
